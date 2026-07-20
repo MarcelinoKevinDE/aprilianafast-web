@@ -1,21 +1,190 @@
-@import 'tailwindcss';
+/* ================= CUSTOM STYLING FOR MUA APRILIANAFAST ================= */
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+/* Navbar link hover & active effect */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
 
-    /* AprilianaFast custom palette */
-    --color-blush: #F7E9E6;
-    --color-rose: #E8C2C0;
-    --color-nude: #FBF6F2;
-    --color-ink: #4A3A3C;
-    --color-gold: #C6A15B;
-    --color-goldlt: #E7D5AC;
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: #C6A15B; /* gold */
+    transition: width 0.3s ease;
+}
 
-    /* AprilianaFast custom fonts */
-    --font-display: 'Cormorant Garamond', serif;
-    --font-body: 'Jost', sans-serif;
+.nav-link:hover {
+    color: #C6A15B;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Mobile Menu Links */
+.mobile-nav-link {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    color: #4A3A3C; /* ink */
+    transition: color 0.3s ease;
+}
+
+.mobile-nav-link:hover {
+    color: #C6A15B;
+}
+
+/* Hamburger Menu Icon Animation Lines */
+.hamburger-line {
+    width: 24px;
+    height: 2px;
+    background-color: #4A3A3C;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Service Card Design */
+.service-card {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(232, 194, 192, 0.4); /* rose/40 */
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 10px 30px -10px rgba(74, 58, 60, 0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -15px rgba(74, 58, 60, 0.1);
+    border-color: #C6A15B;
+}
+
+/* Read More Button inside Services */
+.read-more-btn {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    color: #4A3A3C;
+    border-bottom: 1px solid #C6A15B;
+    padding-bottom: 2px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    color: #C6A15B;
+    border-color: #4A3A3C;
+}
+
+/* Price Card Design */
+.price-card {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(232, 194, 192, 0.5);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -15px rgba(74, 58, 60, 0.1);
+}
+
+/* Highlighted Price Card (Daisy Package) */
+.price-card-highlight {
+    background-color: #4A3A3C !important; /* ink */
+    color: #FBF6F2 !important; /* nude */
+    border-color: #C6A15B !important;
+    transform: scale(1.03);
+    box-shadow: 0 20px 40px -10px rgba(74, 58, 60, 0.2);
+}
+
+.price-card-highlight:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+/* Price List Items */
+.price-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+    text-align: left;
+    font-size: 0.875rem;
+    color: rgba(74, 58, 60, 0.8);
+    border-top: 1px solid rgba(232, 194, 192, 0.3);
+    padding-top: 1.5rem;
+}
+
+.price-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.price-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #C6A15B;
+    font-weight: bold;
+}
+
+/* Price List Dark Version (for Highlighted Card) */
+.price-list-dark {
+    color: rgba(251, 246, 242, 0.8);
+    border-top: 1px solid rgba(232, 194, 192, 0.2);
+}
+
+.price-list-dark li::before {
+    color: #E7D5AC; /* goldlt */
+}
+
+/* Portfolio Gallery Item */
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    aspect-ratio: 3 / 4;
+    background-color: #E8C2C0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Contact Card */
+.contact-card {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(232, 194, 192, 0.4);
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    transition: all 0.3s ease-in-out;
+    display: block;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: #C6A15B;
+    box-shadow: 0 15px 30px -10px rgba(74, 58, 60, 0.08);
 }

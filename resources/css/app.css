@@ -6,4 +6,16 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+
+    /* AprilianaFast custom palette */
+    --color-blush: #F7E9E6;
+    --color-rose: #E8C2C0;
+    --color-nude: #FBF6F2;
+    --color-ink: #4A3A3C;
+    --color-gold: #C6A15B;
+    --color-goldlt: #E7D5AC;
+
+    /* AprilianaFast custom fonts */
+    --font-display: 'Cormorant Garamond', serif;
+    --font-body: 'Jost', sans-serif;
 }

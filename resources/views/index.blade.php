@@ -11,29 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS (CDN + custom config) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        blush:   '#F7E9E6',   // soft pink background
-                        rose:    '#E8C2C0',   // deeper soft pink accent
-                        nude:    '#FBF6F2',   // near-white nude background
-                        ink:     '#4A3A3C',   // warm dark brown-plum text
-                        gold:    '#C6A15B',   // gold accent
-                        goldlt:  '#E7D5AC',   // light gold
-                    },
-                    fontFamily: {
-                        display: ['"Cormorant Garamond"', 'serif'],
-                        body: ['"Jost"', 'sans-serif'],
-                    },
-                },
-            },
-        }
-    </script>
+    <!-- Tailwind CSS (compiled via Vite, not CDN) -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+    <!-- Custom styles (hamburger, cards, animations, etc.) -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}?v=2">
 </head>
 <body class="font-body text-ink bg-nude antialiased">

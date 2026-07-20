@@ -230,8 +230,8 @@
 
                 <!-- DAISY PACKAGE (highlighted) -->
                 <div class="price-card price-card-highlight">
-                    <p class="uppercase tracking-[0.3em] text-xs text-nude/80 mb-2">Package</p>
-                    <h3 class="font-display text-3xl text-nude mb-1">Daisy</h3>
+                    <p class="uppercase tracking-[0.3em] text-xs text-gold mb-2">Package</p>
+                    <h3 class="font-display text-3xl text-ink mb-1">Daisy</h3>
                     <p class="font-display text-2xl text-goldlt mb-6">Rp 4.500.000</p>
                     <ul class="price-list price-list-dark">
                         <li>Makeup Akad Lanjut Resepsi (Satu Waktu)</li>

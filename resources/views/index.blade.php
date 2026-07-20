@@ -34,7 +34,7 @@
         }
     </script>
 
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}?v=2">
 </head>
 <body class="font-body text-ink bg-nude antialiased">
 
@@ -369,6 +369,6 @@
         </div>
     </footer>
 
-    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}?v=2"></script>
 </body>
 </html>

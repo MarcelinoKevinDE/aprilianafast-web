@@ -36,7 +36,8 @@ RUN composer install --no-dev --optimize-autoloader --no-interaction --no-progre
 
 # 5. Set permission folder yang wajib writable oleh Laravel
 RUN mkdir -p storage/framework/{cache,sessions,views} storage/logs bootstrap/cache \
-    && chmod -R 775 storage bootstrap/cache
+    && touch database/database.sqlite \
+    && chmod -R 775 storage bootstrap/cache database
 
 # 6. Copy entrypoint script
 COPY entrypoint.sh /entrypoint.sh

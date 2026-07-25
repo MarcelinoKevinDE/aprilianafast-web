@@ -25,6 +25,12 @@ php artisan config:clear
 php artisan route:clear
 php artisan view:clear
 
+echo "Running database migrations..."
+php artisan migrate --force
+
+echo "Seeding default layanan (aman dijalankan berulang, tidak duplikat)..."
+php artisan db:seed --class=LayananSeeder --force
+
 echo "Caching config, route, and view..."
 php artisan config:cache
 php artisan route:cache

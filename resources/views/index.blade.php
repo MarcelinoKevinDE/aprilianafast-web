@@ -55,8 +55,7 @@
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
 
-            <a href="https://wa.me/6287712748975?text=Halo%20AprilianaFast%2C%20saya%20tertarik%20untuk%20booking%20makeup%20appointment.%20Boleh%20minta%20info%20lebih%20lanjut%20mengenai%20ketersediaan%20jadwal%20dan%20paketnya%3F%20Terima%20kasih"
-               target="_blank" rel="noopener"
+            <a href="{{ route('booking.create') }}"
                class="hidden lg:inline-block px-6 py-2.5 rounded-full bg-ink text-nude text-xs tracking-widest uppercase font-medium hover:bg-gold transition-colors duration-300">
                 Appointment
             </a>
@@ -77,8 +76,7 @@
             <a href="#price" class="mobile-nav-link">Price</a>
             <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
             <a href="#contact" class="mobile-nav-link">Contact</a>
-            <a href="https://wa.me/6287712748975?text=Halo%20AprilianaFast%2C%20saya%20tertarik%20untuk%20booking%20makeup%20appointment.%20Boleh%20minta%20info%20lebih%20lanjut%20mengenai%20ketersediaan%20jadwal%20dan%20paketnya%3F%20Terima%20kasih"
-               target="_blank" rel="noopener"
+            <a href="{{ route('booking.create') }}"
                class="mt-2 text-center px-6 py-3 rounded-full bg-ink text-nude text-xs tracking-widest uppercase font-medium">
                 Appointment
             </a>
@@ -103,8 +101,7 @@
                 Menghadirkan riasan yang elegan, natural, dan memesona untuk setiap momen istimewa dalam hidupmu.
             </p>
             <div class="mt-10 fade-up">
-                <a href="https://wa.me/6287712748975?text=Halo%20AprilianaFast%2C%20saya%20tertarik%20untuk%20booking%20makeup%20appointment.%20Boleh%20minta%20info%20lebih%20lanjut%20mengenai%20ketersediaan%20jadwal%20dan%20paketnya%3F%20Terima%20kasih"
-                   target="_blank" rel="noopener"
+                <a href="{{ route('booking.create') }}"
                    class="inline-block px-10 py-4 rounded-full bg-gold text-nude text-xs md:text-sm tracking-[0.2em] uppercase font-medium shadow-lg shadow-gold/30 hover:bg-ink transition-colors duration-300">
                     Make Appointment
                 </a>
@@ -230,8 +227,8 @@
 
                 <!-- DAISY PACKAGE (highlighted) -->
                 <div class="price-card price-card-highlight">
-                    <p class="uppercase tracking-[0.3em] text-xs text-gold mb-2">Package</p>
-                    <h3 class="font-display text-3xl text-ink mb-1">Daisy</h3>
+                    <p class="uppercase tracking-[0.3em] text-xs text-nude/80 mb-2">Package</p>
+                    <h3 class="font-display text-3xl text-nude mb-1">Daisy</h3>
                     <p class="font-display text-2xl text-goldlt mb-6">Rp 4.500.000</p>
                     <ul class="price-list price-list-dark">
                         <li>Makeup Akad Lanjut Resepsi (Satu Waktu)</li>
